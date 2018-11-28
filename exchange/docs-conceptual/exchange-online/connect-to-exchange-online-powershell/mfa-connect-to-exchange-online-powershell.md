@@ -61,7 +61,7 @@ If you want to use multi-factor authentication (MFA) to connect to Exchange Onli
     If you don't see the value `Basic = true`, you need to run this command to enable basic authentication for WinRM:
 
     ```
-    winrm set winrm/config/client/auth @{Basic="true"}
+    winrm set winrm/config/client/auth '@{Basic="true"}'
     ```
 
     If basic authentication is disabled, you'll get this error when you try to connect:
